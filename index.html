@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenta Mori - ML/Blockchain Engineer</title>
+    <title>Kenta Mori - AI Infrastructure & Systems Engineer</title>
+    <meta name="description" content="Kenta Mori: AI infrastructure and systems engineer. GPU performance engineering, high-throughput distributed systems in Go and Rust, and privacy-preserving computation.">
+    <meta property="og:title" content="Kenta Mori - AI Infrastructure & Systems Engineer">
+    <meta property="og:description" content="GPU performance engineering, high-throughput distributed systems in Go and Rust, and privacy-preserving computation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kentamori115.github.io/">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +17,13 @@
         <section id="introduction" class="section">
             <div class="section-number">01 // Introduction</div>
             <h1>Kenta Mori</h1>
-            <p class="subtitle">ML/Blockchain Engineer</p>
+            <p class="subtitle">AI Infrastructure &amp; Systems Engineer</p>
+            <p class="tagline">GPU performance engineering · High-throughput distributed systems · Privacy-preserving compute</p>
+            <p class="open-to-work"><span class="status-dot"></span>Open to work: AI infrastructure, inference optimization, ML platform, and senior backend roles</p>
             <div class="social-links">
-                <a href="mailto:kenta.mori32@gmail.com" target="_blank">Email</a>
-                <a href="https://www.linkedin.com/in/morikenta115" target="_blank">LinkedIn</a>
-                <a href="https://github.com/KentaMori115" target="_blank">GitHub</a>
+                <a href="mailto:kenta.mori32@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/morikenta115" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/KentaMori115" target="_blank" rel="noopener">GitHub</a>
             </div>
         </section>
 
@@ -25,17 +32,62 @@
             <div class="section-number">02 // Profile</div>
             <h2>About Me</h2>
             <p class="about-text">
-                I am a <strong>ML/Blockchain Engineer</strong> with 5+ years of experience specializing in <strong>Go</strong> and <strong>Rust</strong> systems development. I have deep expertise in the Ethereum & Cosmos SDK ecosystems, smart contracts (EVM/WASM), systems programming, performance optimization, and high-throughput distributed systems. I'm currently at a turning point in my career, expanding into <strong>Decentralized AI system development</strong>, combining my blockchain infrastructure expertise with cutting-edge AI/ML technologies to build the next generation of decentralized intelligent systems.
+                I'm a backend and systems engineer with <strong>8+ years</strong> of experience building high-throughput distributed systems in <strong>Go</strong> and <strong>Rust</strong>, including 5+ years on blockchain infrastructure across Ethereum, Cosmos SDK, and Solana.
             </p>
+            <p class="about-text">
+                My core specialty is <strong>performance engineering for compute-heavy workloads</strong>. I have 10+ years of focused work optimizing elliptic curve cryptography, from finite field arithmetic to massively parallel <strong>GPU (CUDA)</strong> computation. These are the same skills behind fast, cost-efficient AI training and inference.
+            </p>
+            <p class="about-text">
+                I'm now applying that background to AI systems:
+            </p>
+            <ul class="focus-list">
+                <li><strong>Model fine-tuning at scale.</strong> Fine-tuning experiments on Tongyi-MAI's 6B-parameter Z-Image base model across 1×, 4×, and 8× H100 SXM setups, comparing training parameters, throughput, and cost.</li>
+                <li><strong>Production AI systems.</strong> Agents, retrieval, evaluation, observability, and cost control: the backend engineering that makes AI reliable in production.</li>
+                <li><strong>Confidential and verifiable AI.</strong> Applying my experience with FHE, zk-SNARKs, MPC, and Intel SGX remote attestation to private and verifiable AI workloads.</li>
+            </ul>
         </section>
 
-        <!-- 04 // Portfolio -->
+        <!-- 03 // Portfolio -->
         <section id="portfolio" class="section">
             <div class="section-number">03 // Portfolio</div>
             <h2>Selected Projects</h2>
+
+            <h4 class="project-group">AI &amp; Machine Learning</h4>
+
+            <!--
+                When your AI incident investigation agent is on GitHub, uncomment this block
+                and replace the description, numbers and link with your real results.
+
+            <div class="project-item">
+                <h3>AI Incident Investigation Agent</h3>
+                <p>On-call copilot that investigates alerts across metrics, logs, deploys, and runbooks, and produces structured root-cause reports with cited evidence. Includes a Go/Rust LLM gateway with model routing and caching, pgvector hybrid retrieval, OpenTelemetry tracing, prompt injection defenses, and a CI evaluation suite.</p>
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>Go</span>
+                    <span>MCP</span>
+                    <span>PostgreSQL + pgvector</span>
+                    <span>OpenTelemetry</span>
+                    <span>Docker</span>
+                </div>
+                <a href="https://github.com/KentaMori115/REPO-NAME" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </div>
+            -->
+
+            <div class="project-item">
+                <h3>Diffusion Model Fine-Tuning on H100</h3>
+                <p class="project-status">Ongoing research</p>
+                <p>Fine-tuning experiments on Tongyi-MAI's 6B-parameter Z-Image base model, comparing training parameters, throughput, and cost across 1×, 4×, and 8× H100 SXM configurations.</p>
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>Multi-GPU Training</span>
+                    <span>H100</span>
+                </div>
+            </div>
+
             <div class="project-item">
                 <h3>Deepfake Detection</h3>
-                <p>End-to-end pipeline achieving 91.2% accuracy. Deployed as a scalable REST API with Grad-CAM explainability.</p>
+                <p>End-to-end detection pipeline achieving <strong>91.2% accuracy</strong>, served as a scalable REST API with Grad-CAM explainability.</p>
                 <div class="tech-tags">
                     <span>Python</span>
                     <span>PyTorch</span>
@@ -43,11 +95,12 @@
                     <span>FastAPI</span>
                     <span>Docker</span>
                 </div>
-                <a href="https://github.com/KentaMori115/deepfake-detection" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://github.com/KentaMori115/deepfake-detection" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
+
             <div class="project-item">
                 <h3>Video Anomaly Detection</h3>
-                <p>Production-grade anomaly detection using Autoencoders (92.5% precision) with real-time stream analysis.</p>
+                <p>Production-grade anomaly detection using autoencoders (<strong>92.5% precision</strong>) with real-time stream analysis.</p>
                 <div class="tech-tags">
                     <span>Python</span>
                     <span>PyTorch</span>
@@ -57,150 +110,174 @@
                     <span>Docker</span>
                     <span>Real-time</span>
                 </div>
-                <a href="https://github.com/KentaMori115/cctv-video-anomaly-detection" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://github.com/KentaMori115/cctv-video-anomaly-detection" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
+
+            <h4 class="project-group">Systems, Performance &amp; Blockchain</h4>
+
             <div class="project-item">
-                <h3>Echo Network</h3>
-                <p>Contributed core staking module and i2p proxy to Echo Network L1 blockchain with zk-SNARKs and Mimblewimble protocol integration.</p>
+                <h3>GPU-Accelerated Elliptic Curve Engine</h3>
+                <p>Bitcoin vanity-address generator engineered for massively parallel secp256k1 computation. Optimized EC arithmetic cut computation time by up to 30% and reduced memory use, reaching ~10M addresses/sec on modern CPUs and <strong>billions/sec on GPUs</strong> with CUDA.</p>
                 <div class="tech-tags">
-                    <span>Rust</span>
-                    <span>zk-SNARK</span>
-                    <span>Mimblewimble</span>
+                    <span>CUDA</span>
+                    <span>GPU Computing</span>
+                    <span>ECC</span>
+                    <span>secp256k1</span>
                 </div>
-                <a href="https://github.com/echo-project/echo-node" target="_blank" class="project-link">View on GitHub →</a>
             </div>
+
             <div class="project-item">
                 <h3>Crossflow Network</h3>
-                <p>Architected L1 blockchain with MPC protocol for cross-chain lending, achieving <strong>99.9% uptime</strong> and handling millions in TVL with automated liquidation mechanisms.</p>
+                <p>Architected an L1 blockchain with an MPC protocol for cross-chain lending, achieving <strong>99.9% uptime</strong> and handling millions in TVL with automated liquidation mechanisms.</p>
                 <div class="tech-tags">
                     <span>Go</span>
                     <span>Cosmos SDK</span>
                     <span>MPC</span>
                     <span>Cross-Chain</span>
                 </div>
-                <a href="https://github.com/kenta-mori3322" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://github.com/kenta-mori3322" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
 
             <div class="project-item">
                 <h3>Inco Network</h3>
-                <p>Developed privacy-protected L1 blockchain with FHEVM integration for fully homomorphic encryption, enabling private computation on blockchain with Intel SGX remote attestation.</p>
+                <p>Developed a privacy-preserving L1 blockchain with FHEVM for computation on encrypted data, secured with Intel SGX remote attestation.</p>
                 <div class="tech-tags">
                     <span>Rust</span>
                     <span>Cosmos SDK</span>
                     <span>FHE</span>
                     <span>Intel SGX</span>
                 </div>
-                <a href="https://github.com/kenta-mori3322" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://github.com/kenta-mori3322" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
 
             <div class="project-item">
-                <h3>DeFi Trading Infrastructure</h3>
-                <p>Built high-performance launch pad with sniping functionality and copy trading bots on Solana and Base, optimizing transaction execution using JITO bundles with <strong>40% latency reduction</strong>.</p>
+                <h3>Echo Network</h3>
+                <p>Contributed the core staking module and I2P proxy to an L1 blockchain with zk-SNARK and Mimblewimble integration.</p>
+                <div class="tech-tags">
+                    <span>Rust</span>
+                    <span>zk-SNARK</span>
+                    <span>Mimblewimble</span>
+                </div>
+                <a href="https://github.com/echo-project/echo-node" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Low-Latency Trading Infrastructure</h3>
+                <p>Built launchpad and copy-trading infrastructure on Solana and Base, using Jito bundles to cut transaction execution latency by <strong>40%</strong>.</p>
                 <div class="tech-tags">
                     <span>Rust</span>
                     <span>Solana</span>
                     <span>Anchor</span>
-                    <span>JITO</span>
+                    <span>Jito</span>
                 </div>
-                <a href="https://github.com/kenta-mori3322" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://github.com/kenta-mori3322" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
         </section>
 
-        <!-- 05 // Stack -->
+        <!-- 04 // Stack -->
         <section id="stack" class="section">
             <div class="section-number">04 // Stack</div>
             <h2>Technical Arsenal</h2>
-            
+
             <div class="stack-category">
                 <h4>Languages</h4>
                 <ul>
-                    <li>Golang</li>
+                    <li>Go</li>
                     <li>Rust</li>
                     <li>Python</li>
-                    <li>PyTorch</li>
+                    <li>CUDA</li>
                     <li>Solidity</li>
+                </ul>
+            </div>
+
+            <div class="stack-category">
+                <h4>AI &amp; Machine Learning</h4>
+                <ul>
+                    <li>PyTorch</li>
+                    <li>Multi-GPU Fine-Tuning (H100)</li>
+                    <li>MLflow</li>
+                    <li>FastAPI Model Serving</li>
+                    <li>Scikit-learn</li>
                     <li>Pandas</li>
                     <li>NumPy</li>
-                    <li>Scikit-learn</li>
                     <li>SciPy</li>
-                    <li>Matplotlib</li>
-                    <li>Seaborn</li>
-                    <li>Plotly</li>
-                    <li>Scikit-text</li>
+                    <li>Matplotlib / Seaborn / Plotly</li>
                 </ul>
             </div>
 
             <div class="stack-category">
-                <h4>Blockchain Frameworks</h4>
+                <h4>GPU &amp; Performance</h4>
                 <ul>
-                    <li>Ethereum</li>
-                    <li>Cosmos SDK</li>
-                    <li>Solana</li>
-                    <li>Base</li>
-                    <li>IBC</li>
-                    <li>CometBFT</li>
+                    <li>CUDA Parallel Computing</li>
+                    <li>Finite Field Arithmetic</li>
+                    <li>EC Scalar Multiplication</li>
+                    <li>Low-Latency Optimization</li>
                 </ul>
             </div>
 
             <div class="stack-category">
-                <h4>Smart Contracts & Web3</h4>
-                <ul>
-                    <li>EVM</li>
-                    <li>WASM</li>
-                    <li>CosmWasm</li>
-                    <li>Anchor Framework</li>
-                </ul>
-            </div>
-
-            <div class="stack-category">
-                <h4>Cryptography & Security</h4>
+                <h4>Cryptography &amp; Security</h4>
                 <ul>
                     <li>zk-SNARK</li>
                     <li>MPC (Multi-Party Computation)</li>
                     <li>FHE (Fully Homomorphic Encryption)</li>
                     <li>Intel SGX</li>
+                    <li>ECC (secp256k1)</li>
                 </ul>
             </div>
 
             <div class="stack-category">
-                <h4>Infrastructure & DevOps</h4>
+                <h4>Infrastructure &amp; Data</h4>
                 <ul>
                     <li>Docker</li>
                     <li>Nix</li>
+                    <li>PostgreSQL</li>
                     <li>Protocol Buffers</li>
                     <li>libp2p</li>
-                    <li>Git & CI/CD</li>
+                    <li>Git &amp; CI/CD</li>
                     <li>AWS</li>
                     <li>GCP</li>
                 </ul>
             </div>
 
             <div class="stack-category">
-                <h4>Web Technologies</h4>
+                <h4>Blockchain &amp; Smart Contracts</h4>
+                <ul>
+                    <li>Ethereum / EVM</li>
+                    <li>Cosmos SDK</li>
+                    <li>CometBFT</li>
+                    <li>IBC</li>
+                    <li>Solana / Anchor</li>
+                    <li>Base</li>
+                    <li>WASM / CosmWasm</li>
+                </ul>
+            </div>
+
+            <div class="stack-category">
+                <h4>Web</h4>
                 <ul>
                     <li>Next.js</li>
                     <li>React</li>
-                    <li>PostgreSQL</li>
                 </ul>
             </div>
         </section>
 
-        <!-- 06 // Background -->
+        <!-- 05 // Background -->
         <section id="background" class="section">
             <div class="section-number">05 // Background</div>
             <h2>Education</h2>
-            
+
             <div class="education-item">
                 <h3>Osaka Institute of Technology</h3>
-                <p class="degree">Bachelor's Degree (2012-2016)</p>
                 <p class="degree">Master of Science: Computer Science (2016-2017)</p>
+                <p class="degree">Bachelor's Degree (2012-2016)</p>
                 <p class="location">Osaka, Japan</p>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>Designed & Engineered by Kenta Mori © 2026</p>
+        <p>Designed &amp; Engineered by Kenta Mori © 2026</p>
     </footer>
 
     <script src="script.js"></script>
