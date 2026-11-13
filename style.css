@@ -106,6 +106,91 @@ h4 {
     color: var(--accent-color);
 }
 
+.about-text + .about-text {
+    margin-top: 20px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: var(--section-number-color);
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+.open-to-work {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border: 1px solid var(--accent-color);
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+.status-dot {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.focus-list {
+    list-style: none;
+    max-width: 800px;
+    margin-top: 15px;
+}
+
+.focus-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.focus-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.focus-list strong {
+    color: var(--accent-color);
+    font-weight: normal;
+}
+
+.project-group {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.project-item + .project-group {
+    margin-top: 70px;
+}
+
+.project-item .project-status {
+    font-size: 12px;
+    color: var(--section-number-color);
+    letter-spacing: 1px;
+    margin-top: -8px;
+    margin-bottom: 15px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .status-dot {
+        animation: none;
+    }
+}
+
 .experience-item {
     margin-bottom: 40px;
     padding-left: 20px;
